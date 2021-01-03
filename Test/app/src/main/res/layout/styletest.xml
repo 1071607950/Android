@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        style="@style/MyStyle"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/MyStyle.TextView"
+            android:text="@string/input_phone"
+            android:visibility="visible"/>
+        <View
+            android:background="#00ECD4"
+            android:id="@+id/box1"
+            style="@style/MyBox"/>
+        <LinearLayout
+            android:id="@+id/ll_content"
+            style="@style/MyStyle">
+            <EditText
+              style="@style/MyStyle.TextView.EditText"
+                android:hint="@string/phone_number"/>
+        </LinearLayout>
+        <View
+            android:background="#00BCD4"
+            android:id="@+id/box2"
+            style="@style/MyBox"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="#E0E0E0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_ok"
+                style="@style/MyStyle.Button"
+                android:text="@string/confirm"
+                android:textColor="#4CAF50"/>
+            <Button
+                android:id="@+id/btn_cancel"
+                style="@style/MyStyle.Button"
+                android:text="@string/cancel"
+                android:textColor="#009688"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
